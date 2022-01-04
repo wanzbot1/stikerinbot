@@ -16,7 +16,7 @@ Ketik ${usedPrefix}tekb untuk bantuan
 Bonus: ${poin} XP
 `.trim()
     conn.tebakkabupaten[id] = [
-        await conn.sendButtonImg(m.chat, json.url, caption, '© stikerin', 'Bantuan', '.teka', m),
+        await conn.sendButtonImg(m.chat, json.url, caption, '© icebotz', 'Bantuan', '.teka', m),
         json, poin,
         setTimeout(() => {
             if (conn.tebakkabupaten[id]) conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.title}*`, '© stikerin', 'Tebak Kabupaten', '.tebakkabupaten', conn.tebakkabupaten[id][0])
