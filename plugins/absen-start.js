@@ -6,7 +6,7 @@ let handler = async (m, { conn, usedPrefix, text }) => {
     let id = m.chat
     if (id in conn.absen) return await conn.sendButton(m.chat, `Masih ada absen di chat ini!`, '© stikerin', 'Hapus', `${usedPrefix}-absen`, conn.absen[id][0])
     conn.absen[id] = [
-        await conn.sendButton(m.chat, `Absen dimulai`, '© stikerin', 'Absen', `${usedPrefix}absen`, m),
+        await conn.sendButton(m.chat, `Absen dimulai`, '© icebotz', 'Absen', `${usedPrefix}absen`, m),
         [],
         text
     ]
