@@ -28,15 +28,8 @@ handler.all = async function (m, { conn, isBlocked }) {
 ├ 30 Hari / Rp 10,000
 └────
 
-https://github.com/ariffb25/stikerinbot
-`.trim(), '© stikerin', 'Pemilik Bot', ',owner', m)
-    }
-
-    // salam
-    let reg = /(ass?alam|اَلسَّلاَمُ عَلَيْكُمْ|السلام عليکم)/i
-    let isSalam = reg.exec(m.text)
-    if (isSalam && !m.fromMe) {
-        m.reply(`وَعَلَيْكُمْ السَّلاَمُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ\n_wa\'alaikumussalam wr.wb._`)
+https://github.com
+`.trim(), '© icebotz', 'Pemilik Bot', ',owner', m)
     }
 
     // backup db
@@ -60,7 +53,7 @@ https://github.com/ariffb25/stikerinbot
         if (new Date() * 1 - set.status > 1000) {
             let _uptime = process.uptime() * 1000
             let uptime = conn.clockString(_uptime)
-            await this.setStatus(`Aktif selama ${uptime} | Mode: ${set.self ? 'Private' : set.group ? 'Hanya Grup' : 'Publik'} | stikerinbot oleh ariffb`).catch(_ => _)
+            await this.setStatus(`Aktif selama ${uptime} | Mode: ${set.self ? 'Private' : set.group ? 'Hanya Grup' : 'Publik'} | icebotz oleh ice`).catch(_ => _)
             set.status = new Date() * 1
         }
     }
