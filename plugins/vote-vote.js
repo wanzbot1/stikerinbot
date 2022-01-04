@@ -24,7 +24,7 @@ ${upvote.map(u => '@' + u.split`@`[0]).join('\n')}
 _Total: ${devote.length}_
 ${devote.map(u => '@' + u.split`@`[0]).join('\n')}
 
-© stikerin
+© icebotz
     `.trim()
     conn.send2Button(m.chat, caption, '© stikerin', 'Upvote', `${usedPrefix}upvote`, 'Devote', `${usedPrefix}devote`, m)
 }
