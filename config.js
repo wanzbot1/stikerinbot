@@ -1,7 +1,7 @@
 let fs = require('fs')
 let chalk = require('chalk')
 
-global.owner = ['6283128734012', '6287755080455'] // Letakan nomor kamu disini
+global.owner = ['601135268529', '60146879597'] // Letakan nomor kamu disini
 
 global.APIs = { // API Prefix
   // nama: 'https://website'
@@ -25,15 +25,15 @@ global.APIKeys = { // APIKey nya disini
   'https://hardianto-chan.herokuapp.com': 'hardianto',
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://pencarikode.xyz': 'pais',
-  'https://api.xteam.xyz': 'apikeymu',
-  'https://api.zeks.xyz': 'apivinz',
+  'https://api.xteam.xyz': '1d88ca1ff6804055',
+  'https://api.zeks.xyz': 'd90a9e986e18778b',
 }
 
 // Sticker WM
-global.packname = 'arif️fb'
-global.author = 'amel'
+global.packname = 'ice'
+global.author = 'bot'
 
-global.wm = '© ariffb & melcanz'
+global.wm = '© ICEBOT'
 global.wait = '_*tunggu sedang diproses...*_'
 global.eror = '_*Server Error*_'
 global.benar = '✅'
