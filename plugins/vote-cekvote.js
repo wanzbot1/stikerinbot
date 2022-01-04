@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix }) => {
     let id = m.chat
     conn.vote = conn.vote ? conn.vote : {}
-    if (!(id in conn.vote)) return conn.sendButton(m.chat, `Tidak ada voting digrup ini!`, '© stikerin', 'Mulai', `${usedPrefix}+vote`, m)
+    if (!(id in conn.vote)) return conn.sendButton(m.chat, `Tidak ada voting digrup ini!`, '© icebotz', 'Mulai', `${usedPrefix}+vote`, m)
     let [reason, upvote, devote] = conn.vote[id]
     let caption = `
 「 *Vote* 」
@@ -18,7 +18,7 @@ ${devote.map(u => '@' + u.split`@`[0]).join('\n')}
 
 © stikerin
     `.trim()
-    await conn.send3Button(m.chat, caption, '© stikerin', 'Upvote', `${usedPrefix}upvote`, 'Devote', `${usedPrefix}devote`, 'Hapus', `${usedPrefix}-vote`, m)
+    await conn.send3Button(m.chat, caption, '© icebotz', 'Upvote', `${usedPrefix}upvote`, 'Devote', `${usedPrefix}devote`, 'Hapus', `${usedPrefix}-vote`, m)
 }
 handler.help = ['cekvote']
 handler.tags = ['vote']
