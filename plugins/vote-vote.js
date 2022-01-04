@@ -26,7 +26,7 @@ ${devote.map(u => '@' + u.split`@`[0]).join('\n')}
 
 © icebotz
     `.trim()
-    conn.send2Button(m.chat, caption, '© stikerin', 'Upvote', `${usedPrefix}upvote`, 'Devote', `${usedPrefix}devote`, m)
+    conn.send2Button(m.chat, caption, '© icebotz', 'Upvote', `${usedPrefix}upvote`, 'Devote', `${usedPrefix}devote`, m)
 }
 handler.help = ['upvote', 'devote']
 handler.tags = ['vote']
